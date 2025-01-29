@@ -1,0 +1,77 @@
+.contenedor {
+    width: 98vw;
+    height: 70vh;
+    margin: 0 auto; /* Centra el cuadro */
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+/* Estilos generales de la sección de servicios */
+.services-section {
+    text-align: center; /* Centra el título */
+    padding: 50px 20px; /* Espaciado superior e inferior */
+    background-color: #f4f4f4; /* Fondo claro */
+}
+
+.services-title {
+    font-size: 36px; /* Tamaño grande para el título */
+    font-weight: bold;
+    color: #333; /* Color oscuro para el título */
+    margin-bottom: 30px; /* Espaciado debajo del título */
+}
+
+/* Contenedor de los servicios */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Grupo de los servicios */
+.service-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* Asegura que las cajas se ajusten a pantallas más pequeñas */
+}
+
+/* Caja de cada servicio */
+.service-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%; /* Ajustar el tamaño según necesites */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el mouse sobre la caja */
+.service-box:hover {
+    transform: scale(1.05); /* Aumenta un poco el tamaño */
+}
+
+/* Imagen dentro de cada caja */
+.service-box img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Título y descripción de cada servicio */
+.service-box h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    font-size: 14px;
+    color: #666;
+}

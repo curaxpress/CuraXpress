@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CuraXpress - Emergencias y Enfermería</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Enlaza el CSS -->
+  <style>
+    /* Estilos Generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Esto asegura que el cuerpo siempre ocupe al menos el 100% de la altura de la pantalla */
+    }
+
+    /* Banner */
+    .banner {
+      width: 100%;
+      height: 500px; /* Altura del banner */
+      background: url('IMAGENES/f.jpg') no-repeat center center/cover; /* Asegúrate de que la ruta de la imagen sea correcta */
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .banner-text {
+      font-size: 3.5rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Esto da un efecto de sombra al texto */
+    }
+
+    .banner h1 {
+      margin: 0;
+    }
+
+    .banner p {
+      margin-top: 10px;
+      font-size: 3rem;
+    }
+
+    /* Sección de Contacto */
+    .contact {
+      text-align: center;
+      padding: 40px 0;
+      background-color: #f2f2f2;
+    }
+
+    .contact h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .whatsapp-btn {
+      background-color: #25D366;
+      color: white;
+      text-decoration: none;
+      padding: 15px 30px;
+      font-size: 3.5em;
+      border-radius: 30px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .whatsapp-btn img {
+      width: 100px;
+      height: 100px;
+    }
+
+    /* Pie de Página */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 20px;  /* Ajustamos el padding para que el pie de página sea más pequeño */
+      position: relative;
+      width: 100%;
+      margin-top: auto; /* Mantenerlo en la parte inferior */
+      font-size: 0.9rem; /* Reducir el tamaño de la fuente */
+    }
+
+    .footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 1rem;
+      margin-top: 40px;
+    }
+
+    /* Servicios */
+    .services-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .service-group {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      gap: 20px;
+    }
+
+    .service-box {
+      background-color: white;
+      border-radius: 12px;
+      padding: 20px;
+      width: 30%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    .service-box img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    /* Emergencias */
+    .emergency-section {
+      background: #c10000;
+      color: white;
+      padding: 40px 20px;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .emergency-section h2 {
+      margin-bottom: 20px;
+    }
+
+    .emergency-section p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .emergency-img {
+      width: 80%;
+      max-width: 100px;
+      border-radius: 12px;
+    }
+
+    /* Contacto */
+    .contact-box {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      margin: 20px;
+    }
+
+    .whatsapp-button {
+      display: inline-flex;
+      align-items: center;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      gap: 10px;
+    }
+
+    .whatsapp-button img {
+      width: 30px;
+      height: 30px;
+    }
+
+    /* Sección del autor */
+    .author-section {
+      text-align: center;
+      padding: 20px;
+      background-color: #f2f2f2;
+      margin-top: 40px;
+      font-size: 1.2rem;
+    }
+
+    .author-section h2 {
+      font-size: 1.5rem;
+      color: #009688;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Banner de bienvenida -->
+  <div class="banner">
+    <div class="banner-text">
+      <h1>CuraXpress</h1>
+      <p>Emergencias PreHospitalarias y Enfermería al Instante</p>
+    </div>
+  </div>
+
+  <!-- Sección de contacto -->
+  <div class="contact">
+    <h2>¿Necesitas Informacion?</h2>
+    <p>Contáctanos por WhatsApp</p>
+    <a href="https://wa.me/6647352240" class="whatsapp-btn">
+      <img src="IMAGENES/WhatsApp.svg.webp" alt="WhatsApp"> 
+      Contactar por WhatsApp
+    </a>
+  </div>
+
+  <div class="contenedor">
+    <img src="IMAGENES/cobertura.png" alt="Imagen centrada">
+</div>
+
+
+<!-- Sección de servicios -->
+<div class="services-section">
+  <h2 class="services-title">Ofrecemos atencion en</h2>
+
+  <div class="services-container">
+      <!-- Primer grupo de tres servicios -->
+      <div class="service-group">
+          <div class="service-box">
+              <img src="IMAGENES/medicamento.jpg" alt="Administración de medicamentos">
+              <h3>Administración de medicamentos</h3>
+              <p>Administración segura y adecuada de medicamentos.</p>
+          </div>
+          <div class="service-box">
+              <img src="IMAGENES/primero-auxilios-a.webp" alt="Asistencia de primeros auxilios">
+              <h3>Asistencia de primeros auxilios</h3>
+              <p>Atención inmediata para estabilizar a los pacientes.</p>
+          </div>
+          <div class="service-box">
+              <img src="IMAGENES/heridas.jpg" alt="Curación y desinfección de heridas">
+              <h3>Curación y desinfección de heridas</h3>
+              <p>Tratamiento para heridas y quemaduras.</p>
+          </div>
+      </div>
+
+      <!-- Segundo grupo de tres servicios -->
+      <div class="service-group">
+          <div class="service-box">
+              <img src="IMAGENES/CONTROL-DE-SIGNOS-VITALES.jpeg" alt="Toma de Signos Vitales">
+              <h3>Toma de Signos Vitales</h3>
+              <p>Monitoreo de signos vitales para evaluar el estado del paciente.</p>
+          </div>
+          <div class="service-box">
+              <img src="IMAGENES/El-procedimiento-de-la-venoclisis.jpg" alt="Aplicación de Inyecciones y canalizaciones">
+              <h3>Aplicación de Inyecciones y Canalizaciones</h3>
+              <p>Aplicación segura de medicamentos y fluidos intravenosos.</p>
+          </div>
+          <div class="service-box">
+              <img src="IMAGENES/emergencia.webp" alt="Atención de Emergencias">
+              <h3>Atención de Emergencias</h3>
+              <p>Intervención rápida y en situaciones de emergencia.</p>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+  <!-- Sección de emergencias -->
+  <div class="emergency-section">
+    <h2>Atención de Emergencias 🚑</h2>
+    <p>Nos encargamos de cada emergencia con rapidez y profesionalismo.</p>
+    <img src="IMAGENES/1976784.png" alt="Atención de Emergencias" class="emergency-img">
+  </div>
+
+
+
+  
+  <!-- Sección del autor -->
+  <div class="author-section">
+    <h2>CuraXpress</h2>
+    <p>EST. LIC ENFERMERÍA Luis Mario Reyes</p>
+  </div>
+
+</body>
+</html>
