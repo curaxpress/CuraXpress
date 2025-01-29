@@ -199,6 +199,64 @@
       color: #009688;
     }
 
+    /* Medios de comunicación responsivos */
+    @media screen and (max-width: 768px) {
+      .banner-text {
+        font-size: 2.5rem;
+      }
+
+      .banner p {
+        font-size: 2rem;
+      }
+
+      .whatsapp-btn {
+        font-size: 2.5rem;
+        padding: 12px 25px;
+      }
+
+      .service-box {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .emergency-img {
+        width: 60%;
+        max-width: 100px;
+      }
+
+      .services-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .services-title {
+        font-size: 2.5rem;
+      }
+    }
+
+    /* Adaptaciones para dispositivos móviles más pequeños */
+    @media screen and (max-width: 480px) {
+      .banner-text {
+        font-size: 2rem;
+      }
+
+      .banner p {
+        font-size: 1.5rem;
+      }
+
+      .whatsapp-btn {
+        font-size: 2rem;
+        padding: 10px 20px;
+      }
+
+      .contact-box {
+        width: 100%;
+      }
+
+      .author-section h2 {
+        font-size: 1.2rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -221,56 +279,59 @@
     </a>
   </div>
 
-  <div class="contenedor">
-    <img src="IMAGENES/cobertura.png" alt="Imagen centrada">
-</div>
-
-
-<!-- Sección de servicios -->
-<div class="services-section">
-  <h2 class="services-title">Ofrecemos atencion en</h2>
-
-  <div class="services-container">
-      <!-- Primer grupo de tres servicios -->
-      <div class="service-group">
-          <div class="service-box">
-              <img src="IMAGENES/medicamento.jpg" alt="Administración de medicamentos">
-              <h3>Administración de medicamentos</h3>
-              <p>Administración segura y adecuada de medicamentos.</p>
-          </div>
-          <div class="service-box">
-              <img src="IMAGENES/primero-auxilios-a.webp" alt="Asistencia de primeros auxilios">
-              <h3>Asistencia de primeros auxilios</h3>
-              <p>Atención inmediata para estabilizar a los pacientes.</p>
-          </div>
-          <div class="service-box">
-              <img src="IMAGENES/heridas.jpg" alt="Curación y desinfección de heridas">
-              <h3>Curación y desinfección de heridas</h3>
-              <p>Tratamiento para heridas y quemaduras.</p>
-          </div>
-      </div>
-
-      <!-- Segundo grupo de tres servicios -->
-      <div class="service-group">
-          <div class="service-box">
-              <img src="IMAGENES/CONTROL-DE-SIGNOS-VITALES.jpeg" alt="Toma de Signos Vitales">
-              <h3>Toma de Signos Vitales</h3>
-              <p>Monitoreo de signos vitales para evaluar el estado del paciente.</p>
-          </div>
-          <div class="service-box">
-              <img src="IMAGENES/El-procedimiento-de-la-venoclisis.jpg" alt="Aplicación de Inyecciones y canalizaciones">
-              <h3>Aplicación de Inyecciones y Canalizaciones</h3>
-              <p>Aplicación segura de medicamentos y fluidos intravenosos.</p>
-          </div>
-          <div class="service-box">
-              <img src="IMAGENES/emergencia.webp" alt="Atención de Emergencias">
-              <h3>Atención de Emergencias</h3>
-              <p>Intervención rápida y en situaciones de emergencia.</p>
-          </div>
-      </div>
+  
+<br>
+<div class="contenedor">
+  <div class="titulo">
+      <p>Ofrecemos una cobertura desde 5 de mayo asta campo esperanza</p>
   </div>
+  <img src="IMAGENES/cobertura.png" alt="Imagen centrada">
 </div>
 
+  <!-- Sección de servicios -->
+  <div class="services-section">
+    <h2 class="services-title">Ofrecemos atención en</h2>
+
+    <div class="services-container">
+        <!-- Primer grupo de tres servicios -->
+        <div class="service-group">
+            <div class="service-box">
+                <img src="IMAGENES/medicamento.jpg" alt="Administración de medicamentos">
+                <h3>Administración de medicamentos</h3>
+                <p>Administración segura y adecuada de medicamentos.</p>
+            </div>
+            <div class="service-box">
+                <img src="IMAGENES/primero-auxilios-a.webp" alt="Asistencia de primeros auxilios">
+                <h3>Asistencia de primeros auxilios</h3>
+                <p>Atención inmediata para estabilizar a los pacientes.</p>
+            </div>
+            <div class="service-box">
+                <img src="IMAGENES/heridas.jpg" alt="Curación y desinfección de heridas">
+                <h3>Curación y desinfección de heridas</h3>
+                <p>Tratamiento para heridas y quemaduras.</p>
+            </div>
+        </div>
+
+        <!-- Segundo grupo de tres servicios -->
+        <div class="service-group">
+            <div class="service-box">
+                <img src="IMAGENES/CONTROL-DE-SIGNOS-VITALES.jpeg" alt="Toma de Signos Vitales">
+                <h3>Toma de Signos Vitales</h3>
+                <p>Monitoreo de signos vitales para evaluar el estado del paciente.</p>
+            </div>
+            <div class="service-box">
+                <img src="IMAGENES/El-procedimiento-de-la-venoclisis.jpg" alt="Aplicación de Inyecciones y canalizaciones">
+                <h3>Aplicación de Inyecciones y Canalizaciones</h3>
+                <p>Aplicación segura de medicamentos y fluidos intravenosos.</p>
+            </div>
+            <div class="service-box">
+                <img src="IMAGENES/emergencia.webp" alt="Atención de Emergencias">
+                <h3>Atención de Emergencias</h3>
+                <p>Intervención rápida y en situaciones de emergencia.</p>
+            </div>
+        </div>
+    </div>
+  </div>
 
   <!-- Sección de emergencias -->
   <div class="emergency-section">
@@ -279,9 +340,6 @@
     <img src="IMAGENES/1976784.png" alt="Atención de Emergencias" class="emergency-img">
   </div>
 
-
-
-  
   <!-- Sección del autor -->
   <div class="author-section">
     <h2>CuraXpress</h2>
